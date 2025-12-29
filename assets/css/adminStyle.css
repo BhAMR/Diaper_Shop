@@ -1,0 +1,276 @@
+/* =====================================
+   GLOBAL
+===================================== */
+body {
+    margin: 0;
+    background-color: #f4f6f9;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #333;
+}
+
+/* =====================================
+   ADMIN NAVBAR
+===================================== */
+.main-navbar-admin {
+    background: linear-gradient(135deg, #1f2933, #111827);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo-img {
+    height: 54px;
+}
+
+/* Brand */
+.brand-text-admin {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+}
+
+/* =====================================
+   NAV MENU
+===================================== */
+.nav-actions-admin {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-btn-admin {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid transparent;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.nav-btn-admin i {
+    color: #ffffff;
+}
+
+/* Hover */
+.nav-btn-admin:hover {
+    background-color: rgba(243, 232, 232, 0.12);
+    color: #bcd3ce;
+}
+
+/* Logout Button */
+.nav-btn-admin.btn-light {
+    background: linear-gradient(135deg, #dc3545, #b02a37);
+    border: none;
+    color: #ffffff;
+}
+
+.nav-btn-admin.btn-light:hover {
+    opacity: 0.9;
+}
+
+/* Mobile Icon */
+.icon-admin i {
+    color: #ffffff !important;
+}
+
+.brand-taxt-admin{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.brand-taxt-admin::after{
+    content: '';
+    display: block;
+    margin: 6px auto 0;
+    width: 70px;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 2px;
+}
+
+/* =====================================
+   DASHBOARD
+===================================== */
+.dashboard-card {
+    border-radius: 18px;
+    background: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    height: 100%;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard Text */
+.dashboard-card h6 {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    margin-top: 18px;
+}
+
+.dashboard-card h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Dashboard Button */
+.dashboard-card .btn {
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-weight: 500;
+}
+
+.custom-table table th {
+    background: #212529;
+    color: #fff;
+    font-size: 14px;
+}
+
+.custom-table table td {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   GRADIENT COLORS
+===================================== */
+.bg-primary {
+    background: linear-gradient(135deg, #4e73df, #224abe);
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #1cc88a, #13855c);
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, #f6c23e, #dda20a);
+}
+
+.bg-info {
+    background: linear-gradient(135deg, #36b9cc, #258391);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+.admin-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.footer-text {
+    color: #6b7280;
+}
+
+/* =====================================
+   CLOSE BUTTON
+===================================== */
+.close-page {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    font-size: 22px;
+    color: #dc3545;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.25s ease;
+}
+
+.close-page:hover {
+    background: #dc3545;
+    color: #ffffff;
+    transform: scale(1.25);
+}
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+@media (max-width: 991px) {
+    .nav-actions-admin {
+        display: none;
+        position: absolute;
+        top: 72px;
+        right: 15px;
+        width: 240px;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 14px;
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-actions-admin.show {
+        display: flex;
+    }
+
+    .nav-btn-admin {
+        width: 100%;
+        color: #1f2933;
+        text-align: left;
+    }
+
+    .nav-btn-admin i {
+        color: #1f2933;
+    }
+
+    .nav-btn-admin:hover {
+        background-color: #f3f4f6;
+    }
+
+    .nav-btn-admin.btn-light {
+        color: #ffffff;
+    }
+}
+
+/* =====================================
+   SMALL DEVICES
+===================================== */
+@media (max-width: 768px) {
+    .dashboard-card h3 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 576px) {
+    .dashboard-card h3 {
+        font-size: 24px;
+    }
+}
